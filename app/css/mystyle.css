@@ -1,0 +1,66 @@
+input[type="text"] {
+             display: inline-block;
+             margin : 0 auto;
+}
+
+.myBtn{
+  display: inline-block;
+  width: 10%;
+  height: 80%;
+  border-color: #ff5a5f;
+    border-bottom-color: #e00007;
+    background-color: #ff5a5f;
+    color: #fff;
+}
+
+.center {
+  margin: auto;
+  width: 800px;
+  height: 50px;
+}
+
+.centerNoWidth {
+  margin: auto;
+}
+
+/* ---- isotope ---- */
+/* test */
+.grid {
+  background: #DDD;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+#video_box{
+    float:left;
+}
+#video_overlays {
+  position:absolute;
+  float:middle;
+  top:500px;
+  width:640px;
+  min-height:370px;
+  /*background-color:#000;*/
+  z-index:300000;
+}
