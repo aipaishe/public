@@ -1,0 +1,130 @@
+<html>
+<head>
+  <title>AiPaiShe</title>
+<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+<link rel="stylesheet" type="text/css" href="css/app.css">
+	<style type="text/css">.font_0 {font:normal normal bold 40px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif ;color:#A0A09F;}</style>
+<style type="text/css">.font_2 {font:normal normal bold 30px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif ;color:#A0A09F;}</style>
+<style type="text/css">.logoContainer {margin: auto; width: 400px; height:200px; border:4px solid rgba(160, 160, 159, 1);background-color:rgba(255, 255, 255, 1);border-radius:0;  }</style>
+<style type="text/css">.logo{margin: auto; width: 296px; left: 5px; top: 18px;}</style>
+<style type="text/css">.slogan{margin: auto; width: 296px; left: 5px; top: 87px;}</style>
+	<script src="bower_components/jquery/src/jquery.js"></script>
+	<script src="bower_components/imagesloaded/imagesloaded.pkgd.js"></script>
+	<script src="bower_components/masonry/masonry.js"></script>
+
+	<script>
+$(document).ready( function() {
+  // init Masonry
+  var $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    columnWidth: '.grid-sizer'
+  });
+  // layout Isotope after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry();
+  });  
+});
+	</script>
+
+</head>
+
+<body>
+ <div class="w-col w-col-8 nav-column">
+  <a class="nav-link" href="http://www.google.com">log in</a>
+  <a class="nav-link" href="http://www.baidu.com">sign up</a>
+  <a class="nav-link" href="/search-result">Photographer</a>
+  <a class="nav-link" href="/search-result">Client</a>
+</div>
+
+<div class="logoContainer">
+<div class="logo"><h1 style="text-align: center; font-size: 60px;" class="font_0"><span style="font-size:60px;">AiPaiShe</span></h1></div>
+<div class="slogan"><h2 style="text-align: center;" class="font_2">love goes on</h2></div>
+
+
+</div>
+
+<div id="wrap_video">
+<div id="video_box">
+    <div id="video_overlays">
+      <div class="center">
+        <form>
+        <input style="width: 70%; height: 80%;margin-top: 5px;margin-left: 100px;" type="text" name="photographerToSearch"></input><button class="myBtn" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+    <video preload="auto" loop="loop" id="pretzel-video" autoplay="autoplay">
+  <source src="https://a0.muscache.com/airbnb/static/Seoul-P1-4.mp4" type="video/mp4">
+  <source src="https://a0.muscache.com/airbnb/static/Seoul-P1-4.webm" type="video/webm">
+    Your browser does not support this streaming content.
+</video>
+</div>
+    
+</div>
+
+<!-- <div class="center">
+	<form>
+	<input style="width: 70%; height: 80%;margin-top: 5px;margin-left: 100px;" type="text" name="photographerToSearch"></input><button class="myBtn" type="button">Search</button>
+	</form>
+</div>
+<video preload="auto" loop="loop" id="pretzel-video" autoplay="autoplay" class="video-playing">
+  <source src="https://a0.muscache.com/airbnb/static/Seoul-P1-4.mp4" type="video/mp4">
+  <source src="https://a0.muscache.com/airbnb/static/Seoul-P1-4.webm" type="video/webm">
+</video> -->
+
+<div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="grid-item">
+    <img src=" img/1.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="img/2.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="img/3.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="img/4.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="img/5.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="img/6.jpg" />
+  </div>
+  <div class="grid-item">
+    <img src="img/7.jpg" />
+  </div>
+    <div class="grid-item">
+    <img src="img/8.jpg" />
+  </div>
+    <div class="grid-item">
+    <img src="img/9.jpg" />
+  </div>
+    <div class="grid-item">
+    <img src="img/10.jpg" />
+  </div>
+    <div class="grid-item">
+    <img src="img/11.jpg" />
+  </div>
+    <div class="grid-item">
+    <img src="img/12.jpg" />
+  </div>
+</div>
+
+<div class="w-section section grey footer">
+    <div class="w-container">
+      <p class="footer-text">Images by William Lin.</p>
+      <div class="button-block">
+        <a class="w-inline-block social-button" href="mailto:support@webflow.com?subject=Hello!" target="_blank"><img src="img/email-icon.png" width="21px">
+        </a>
+        <a class="w-inline-block social-button" href="http://facebook.com/webflowapp" target="_blank"><img src="img/facebook-icon.png" width="21px">
+        </a>
+        <a class="w-inline-block social-button" href="http://twitter.com/webflowapp" target="_blank"><img src="img/twitter-icon.png" width="21px">
+        </a>
+      </div><img class="logo-in-footer" src="images/footer-logo.png" width="25px">
+    </div>
+  </div>
+
+</body>
+</html>
